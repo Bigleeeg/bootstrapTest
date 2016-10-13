@@ -320,6 +320,216 @@
             </div>
         </div>
     </div>
+    <hr />
+
+    <div class="container">
+        <h2>创建模态框（Modal）</h2>
+        <!-- 按钮触发模态框 -->
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control" rows="5" placeholder="在这里添加一些文本"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">提交更改</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+    </div>
+    <hr />
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">SVN</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">VB.Net</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Java <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Swing</a></li>
+                    <li><a href="#">jMeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PHP</a></li>
+        </ul>
+    </div>
+    <hr />
+
+    <div class="container">
+        <h4>提示工具（Tooltip）插件 - 按钮</h4>
+        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                title="默认的 Tooltip">
+            默认的 Tooltip
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                data-placement="left" title="左侧的 Tooltip">
+            左侧的 Tooltip
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                data-placement="top" title="顶部的 Tooltip">
+            顶部的 Tooltip
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                data-placement="bottom" title="底部的 Tooltip">
+            底部的 Tooltip
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                data-placement="right" title="右侧的 Tooltip">
+            右侧的 Tooltip
+        </button>
+    </div>
+    <hr />
+
+    <div class="container" style="padding:100px 100px 100px 400px;">
+        <button type="button" class="btn btn-default" title="Popover title"
+                data-container="body" data-toggle="popover" data-placement="left"
+                data-content="左侧的 Popover 中的一些内容">
+            左侧的 Popover
+        </button>
+        <button type="button" class="btn btn-primary" title="Popover title"
+                data-container="body" data-toggle="popover" data-placement="top"
+                data-content="顶部的 Popover 中的一些内容">
+            顶部的 Popover
+        </button>
+        <button type="button" class="btn btn-success" title="Popover title"
+                data-container="body" data-toggle="popover" data-placement="bottom"
+                data-content="底部的 Popover 中的一些内容">
+            底部的 Popover
+        </button>
+        <button type="button" class="btn btn-warning" title="Popover title"
+                data-container="body" data-toggle="popover" data-placement="right"
+                data-content="右侧的 Popover 中的一些内容">
+            右侧的 Popover
+        </button>
+
+        <p class="popover-options" style="padding-top:40px">
+            <a href="#" type="button" class="btn btn-warning" title="<h2>Title</h2>"
+               data-container="body" data-toggle="popover" data-content="<h4>Popover 中的一些内容 —— options 方法</h4>">
+                Popover
+            </a>
+        </p>
+    </div>
+    <hr />
+
+    <div class="container">
+        <h2>点击每个按钮查看方法效果</h2>
+        <h4>演示 .button('toggle') 方法</h4>
+        <div id="myButtons1" class="bs-example">
+            <button type="button" class="btn btn-primary">原始</button>
+        </div>
+
+        <h4>演示 .button('loading') 方法</h4>
+        <div id="myButtons2" class="bs-example">
+            <button type="button" class="btn btn-primary"
+                    data-loading-text="Loading...">
+                原始
+            </button>
+        </div>
+
+        <h4>演示 .button('reset') 方法</h4>
+        <div id="myButtons3" class="bs-example">
+            <button type="button" class="btn btn-primary"
+                    data-loading-text="Loading...">
+                原始
+            </button>
+        </div>
+
+        <h4>演示 .button(string) 方法</h4>
+        <button type="button" class="btn btn-primary" id="myButton4"
+                data-complete-text="Loading finished">
+            请点击我
+        </button>
+    </div>
+    <hr />
+
+    <div class="container">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseOne">
+                            点击我进行展开，再次点击我进行折叠。第 1 部分--hide 方法
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                        lomo.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseTwo">
+                            点击我进行展开，再次点击我进行折叠。第 2 部分--show 方法
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                        lomo.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseThree">
+                            点击我进行展开，再次点击我进行折叠。第 3 部分--toggle 方法
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                        lomo.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseFour">
+                            点击我进行展开，再次点击我进行折叠。第 4 部分--options 方法
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                        lomo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
 
 </body>
 </html>
@@ -337,4 +547,50 @@
         $("#progressDiv").css("width", rate + "%");
         setTimeout("progressBarFun(" + rate + ")", 1000);
     }
+
+    //$(function () {
+    //    $("#myModal").modal({
+    //        keyborad: true
+    //    })
+    //});
+
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+
+    $(function () {
+        $("[data-toggle='popover']").popover();
+    });
+
+    $(function () {
+        $(".popover-options a").popover({ html: true });
+    });
+
+    $(function () {
+        $("#myButtons1 .btn").click(function () {
+            $(this).button('toggle');
+        });
+    });
+    $(function () {
+        $("#myButtons2 .btn").click(function () {
+            $(this).button('loading').delay(1000).queue(function () {
+            });
+        });
+    });
+    $(function () {
+        $("#myButtons3 .btn").click(function () {
+            $(this).button('loading').delay(1000).queue(function () {
+                $(this).button('reset');
+            });
+        });
+    });
+    $(function () {
+        $("#myButton4").click(function () {
+            $(this).button('loading').delay(1000).queue(function () {
+                $(this).button('complete');
+            });
+        });
+    });
+
+
 </script>
